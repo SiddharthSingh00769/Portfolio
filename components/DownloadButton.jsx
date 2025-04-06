@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const DownloadButton = () => {
   return (
-    <a href="/resume.pdf" download>
+    <a href="/assets/resume.pdf" download>
       <Button 
         variant="outline"
         size="lg"
