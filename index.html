@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body id="mainbody" class="m-0 p-0 bg-gradient-to-b from-slate-950 to-gray-800 relative">
+    <div class="container">
+        <nav>
+            <ul class="flex">
+                <li class="sid font-signature text-4xl sm:text-5xl text-white left-6 sm:left-12 top-6 absolute"></li>
+                <ul class="navbar hidden sm:flex sm:visible md:ml-[400px] lg:ml-[600px] xl:ml-[1000px] mt-7 md:space-x-10 xl:space-x-14 text-white font-medium">
+                    <li class="text-gray-500 hover:scale-125 hover:text-white duration-200"><a href="#">Home</a></li>
+                    <li class="text-gray-500 hover:scale-125 hover:text-white duration-200"><a href="#">About</a></li>
+                    <li class="text-gray-500 hover:scale-125 hover:text-white duration-200"><a href="#">Portfolio</a></li>
+                    <li class="text-gray-500 hover:scale-125 hover:text-white duration-200"><a href="#">Contact</a></li>
+                </ul>
+            </ul>
+            <div class="bar absolute visible sm:hidden h-8 w-8 right-1 top-6 text-white z-50">
+                <i class="menu_btn bi bi-list text-2xl"></i>
+            </div>
+            <div id="insidebar" class="absolute hidden h-[100vh] w-[100vw] bg-black opacity-90 justify-center items-center sm:hidden">
+                <ul>
+                    <li class="text-white text-2xl h-16 w-36 bg-gradient-to-r from-blue-400 to-blue-600 mb-6 rounded-lg flex justify-center items-center font-semibold"><a href="#">Home</a></li>
+                    <li class="text-white text-2xl h-16 w-36 bg-gradient-to-r from-blue-400 to-blue-600 mb-6 rounded-lg flex justify-center items-center font-semibold"><a href="#">About</a></li>
+                    <li class="text-white text-2xl h-16 w-36 bg-gradient-to-r from-blue-400 to-blue-600 mb-6 rounded-lg flex justify-center items-center font-semibold"><a href="#">Portfolio</a></li>
+                    <li class="text-white text-2xl h-16 w-36 bg-gradient-to-r from-blue-400 to-blue-600 mb-6 rounded-lg flex justify-center items-center font-semibold"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="body text-white flex ml-14 mt-48 md:ml-28 md:mt-36 lg:ml-32 xl:ml-48 xl:mt-44">
+            <div>
+                <div id="frontend" class="text-[30px] w-[250px] leading-[40px] sm:text-[45px] sm:w-[360px] xl:text-[68px] xl:w-[545px] font-semibold sm:leading-[72px]">Embarking on my career odyssey.</div>
+                <div class="mt-5 w-[250px] sm:w-[350px] xl:w-[470px] text-gray-500">Hello there! I'm a student passionate about Data Structures, Algorithms, and Front-End development. With a knack for problem-solving and an eye for design, I merge logic with creativity in every project. Explore my portfolio to witness how I bring code to life with innovation and precision!</div>
+                <div class="mt-4 h-12 w-32 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg font-semibold flex items-center group">
+                    <div class="ml-5 cursor-pointer">Portfolio</div>
+                    <i class="bi bi-arrow-right-short text-xl group-hover:rotate-90 duration-300"></i>
+                </div>
+                
+            </div>
+            <div></div>
+        </div>
+        <a class="absolute w-28 h-10 bg-gray-500 top-[7%] md:top-[10%] lg:top-[10%] flex justify-center left-[-76px] hover:left-0 hover:bg-gray-950 duration-300" href="https://www.linkedin.com/in/siddharth-singh-b66390299/"><div class="mt-1 ml-2 text-white font-semibold">Linkedin <i class="bi bi-linkedin ml-1 text-xl text-white"></i></div></a>
+        <a class="absolute w-[106px] h-10 bg-gray-500 top-[8%] md:top-[11%] lg:top-[11%] flex justify-center left-[-70px] hover:left-0 hover:bg-gray-950 duration-300" href="https://github.com/SiddharthSingh00769?tab=repositories"><div class="mt-1 ml-2 text-white font-semibold">Github <i class="bi bi-github ml-1 text-xl text-white"></i></div></a>
+        <a class="absolute w-[86px] h-10 bg-gray-500 top-[9%] md:top-[12%] lg:top-[12%] flex justify-center left-[-50px] hover:left-0 hover:bg-gray-950 duration-300" href="mailto:sid018singh@gmail.com"><div class="mt-1 ml-2 text-white font-semibold">Mail <i class="bi bi-envelope ml-1 text-xl text-white"></i></div></a>
+        <a class="absolute w-[107px] h-10 bg-gray-500 top-[10%] md:top-[13%] lg:top-[13%] flex justify-center left-[-71px] hover:left-0 hover:bg-gray-950 duration-300" href="#"><div class="mt-1 ml-2 text-white font-semibold">Resume <i class="bi bi-file-earmark-person ml-1 text-xl text-white"></i></div></a>
+
+        <div class="about mt-[12%] ml-[12%] text-white">
+            <h1 class="text-5xl font-semibold inline border-b-4 border-gray-500">About</h1>
+            <p class="mt-20 text-lg w-[90%]">Welcome to my portfolio! I'm Siddharth Singh, a passionate and driven student with a keen interest in Computer Science. As a dedicated learner, I am committed to exploring and mastering various aspects of DSA and Web Development to make a meaningful contribution to the world around me.
+                Currently pursuing my Btech at PSIT,KANPUR, I have been immersing myself in a diverse range of courses and projects that have helped me develop a solid foundation in logical thinking and designing. Through hands-on experiences and collaborative projects, I have honed my skills in HTML,Tailwind CSS and Javascript, gaining practical insights that complement my academic knowledge.
+                My journey as a student has been guided by a thirst for knowledge and a curiosity to explore new horizons. I am particularly passionate about Full Stack Development, and I am eager to delve deeper into these subjects to uncover innovative solutions and opportunities for growth.
+                I am eager to leverage my academic background, coupled with my passion for Computer Science, to contribute meaningfully to projects, initiatives, and communities that align with my values and aspirations.
+                Thank you for taking the time to explore my portfolio. I invite you to delve deeper into my projects and experiences to gain a better understanding of who I am as a student and aspiring professional. If you have any questions or would like to connect, I would love to hear from you!</p>
+        </div>
+        <div class="Portfolio mt-[12%] ml-[12%] text-white">
+            <h2 class="text-5xl font-semibold inline border-b-4 border-gray-500">Portfolio</h2>
+            <p class="mt-10 text-lg w-[90%]">Project banaye hain lekin abhi deploy nahi kiye...isliye nahi dikha sakta sorry🤡</p>
+        </div>
+        <div class="Experience mt-[12%] ml-[12%] text-white">
+            <h2 class="text-5xl font-semibold inline border-b-4 border-gray-500">Experience</h2>
+            <p class="mt-10 text-lg w-[90%]">These are the technologies I've worked with</p>
+            <div class="cards w-[90%] h-[870px] md:h-[600px] lg:h-[900px] xl:h-[600px] md:flex justify-center md:flex-wrap md:space-x-2 lg:space-x-4">
+                <div class="h-40 w-60 md:h-44 md:w-64 lg:h-56 lg:w-80 mt-[6%] border-b-[5px] border-l-2 border-r-2 border-orange-400 shadow-orange-300 shadow-lg rounded-md group overflow-hidden">
+                    <div class="w-[100%] h-[85%]">
+                        <img class="h-full rounded-md group-hover:scale-105 duration-300" src="images/html.webp" alt="">
+                        <div class="flex justify-center items-center font-semibold">HTML</div>
+                    </div>
+                </div>
+                <div class="h-40 w-60 md:h-44 md:w-64 lg:h-56 lg:w-80 mt-[6%] border-b-[5px] border-l-2 border-r-2 border-blue-500 shadow-blue-400 shadow-lg rounded-md group overflow-hidden">
+                    <div class="w-[100%] h-[85%]">
+                        <img class="h-full rounded-md group-hover:scale-105 duration-300" src="images/css.png" alt="">
+                        <div class="flex justify-center items-center font-semibold">CSS</div>
+                    </div>
+                </div>
+                <div class="h-40 w-60 md:h-44 md:w-64 lg:h-56 lg:w-80 mt-[6%] border-b-[5px] border-l-2 border-r-2 border-yellow-400 shadow-yellow-300 shadow-lg rounded-md group overflow-hidden">
+                    <div class="w-[100%] h-[85%]">
+                        <img class="h-full rounded-md group-hover:scale-105 duration-300" src="images/js.png" alt="">
+                        <div class="flex justify-center items-center font-semibold">Javascript</div>
+                    </div>
+                </div>
+                <div class="h-40 w-60 md:h-44 md:w-64 lg:h-56 lg:w-80 mt-[6%] border-b-[5px] border-l-2 border-r-2 border-sky-600 shadow-sky-500 shadow-lg rounded-md group overflow-hidden">
+                    <div class="w-[100%] h-[85%]">
+                        <img class="h-full rounded-md group-hover:scale-105 duration-300" src="images/tailwind.png" alt="">
+                        <div class="flex justify-center items-center font-semibold">Tailwind</div>
+                    </div>
+                </div>
+                <div class="h-40 w-60 md:h-44 md:w-64 lg:h-56 lg:w-80 mt-[6%] border-b-[5px] border-l-2 border-r-2 border-white shadow-white shadow-lg rounded-md group overflow-hidden">
+                    <div class="w-[100%] h-[85%]">
+                        <img class="h-full rounded-md group-hover:scale-105 duration-300" src="images/c++.jpg" alt="">
+                        <div class="flex justify-center items-center font-semibold">C++</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Contact mt-[12%] ml-[12%] text-white">
+            <h3 class="text-5xl font-semibold inline border-b-4 border-gray-500">Contact</h3>
+            <p class="mt-10 text-lg w-[90%]">Submit the form to get in touch with me</p>
+            <input class="bg-transparent p-2 border-4 border-white rounded-lg mt-[4%]" type="text" placeholder="Enter your name">
+            <br>
+            <input class="bg-transparent p-2 border-4 border-white rounded-lg mt-[1%]" type="text" placeholder="Enter your email">
+            <br>
+            <textarea class="bg-transparent p-2 border-4 border-white rounded-lg mt-[1%]" id="text" cols="30" rows="8" md:cols="40" md:rows="10">Enter your message</textarea>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

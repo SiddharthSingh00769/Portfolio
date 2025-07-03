@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const services = [
   {
     num: '01',
-    title: 'Web Dvelopment',
+    title: 'Web Development',
     description: "Hi! I'm a web developer specializing in full-stack development with the MERN stack (MongoDB, Express.js, React, Node.js , Next.js).",
     href: '/contact'
   },
